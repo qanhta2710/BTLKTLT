@@ -1,3 +1,0 @@
-C:/Users/miyabi/OneDrive/HUST/Code/C/BTLKTLT/build/CMakeFiles/program.dir
-C:/Users/miyabi/OneDrive/HUST/Code/C/BTLKTLT/build/CMakeFiles/edit_cache.dir
-C:/Users/miyabi/OneDrive/HUST/Code/C/BTLKTLT/build/CMakeFiles/rebuild_cache.dir
