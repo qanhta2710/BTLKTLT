@@ -142,8 +142,8 @@ void inDaThucNewtonLui(double *x, double *y, double **table, int n, int precisio
     double *new_tmp = (double *)calloc(n + 1, sizeof(double));
     printf("Da thuc noi suy Newton dang lui: ");
     printLog("Da thuc noi suy Newton dang lui: ");
-    printf("f(x) = %.*lf + ", precision, table[3][0]);
-    printLog("f(x) = %.*lf + ", precision, table[3][0]);
+    printf("f(x) = %.*lf + ", precision, table[n][0]);
+    printLog("f(x) = %.*lf + ", precision, table[n][0]);
     for (int i = 1; i <= n; i++) {
         printf("%.*lf", precision, table[n - i][i]);
         printLog("%.*lf", precision, table[n - i][i]);

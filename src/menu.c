@@ -60,7 +60,7 @@ void processUserInput(int precision) {
             system("cls");
             free(x);
             free(y);
-            if (readInputFromFile("input.txt", &x, &y, &m)) {
+            if (readInputFromFile("input.txt", &x, &y, &m) == 0) {
                 printf("Doc file thanh cong. Du lieu gom:\n");
                 printLog("Doc file thanh cong. Du lieu gom:\n");
                 n = m - 1;
@@ -176,10 +176,21 @@ void processUserInput(int precision) {
                 printf("Hay chon chuc nang tim da thuc bang lagrange hoac newton truoc");
                 printLog("Hay chon chuc nang tim da thuc bang lagrange hoac newton truoc");
             } else {
-                printf("Nhap diem x0: ");
-                scanf("%lf", &x0);
-                printLog("Nhap diem x0: ");
+                do
+                {
+                    printf("Nhap 1 so thuc x0: ");
+                    printLog("Nhap 1 so thuc x0: ");
+                    check = scanf("%lf", &x0);
+                    if (check != 1) {
+                        printf("Vui long nhap mot so thuc\n");
+                        printLog("Vui long nhap mot so thuc!\n");
+                        while (getchar() != '\n');
+                        continue;
+                    }
+                } while (check != 1);
+
                 printLog("%.*lf\n", precision, x0);
+
                 tinhDaThucTaixBangHorner(coeffs, n, x0, precision);
             }
             printf("\n");

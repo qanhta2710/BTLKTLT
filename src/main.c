@@ -10,14 +10,13 @@ int main() {
         printLog("Nhap so chu so hien thi phan thap phan (Nhap so nguyen duong): ");
         check = scanf("%d", &precision);
         if (check != 1) {
-        
-            printf("Vui long nhap mot so nguyen duong!\n");
-            printLog("Vui long nhap mot so nguyen duong!\n");
+            printf("Vui long nhap mot so nguyen duong\n");
+            printLog("Vui long nhap mot so nguyen duong\n");
             while (getchar() != '\n');
             precision = -1;
             continue;
         }
-        printLog("%d", precision);
+        printLog("%d\n", precision);
         if (precision < 0) {
             printf("So chu so hien thi phan thap phan khong the am\n");
             printLog("So chu so hien thi phan thap phan khong the am\n");
@@ -53,7 +52,6 @@ int main() {
             } while (1);
         }
     } while (precision < 0 || precision > 15);
-    printLog("%d\n", precision);
     processUserInput(precision);
     printLog("------------------------------------------------\n");
 }

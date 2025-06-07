@@ -21,3 +21,5 @@ void tinhDaThucTaixBangHorner(double *poly, int deg, double x0, int precision) {
     printf("f(%.*lf) = %.*lf", precision, x0, precision, res);
     printLog("f(%.*lf) = %.*lf", precision, x0, precision, res);
 }
+
+
